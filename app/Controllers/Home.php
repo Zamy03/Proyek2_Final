@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Controllers;
+
+class Home extends BaseController
+{
+    public function index(): string
+    {
+        return view('layout/dashboard', $this->data);
+    }
+
+    public function about() {
+        return view('about/index');
+    }
+}
